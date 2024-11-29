@@ -162,6 +162,8 @@ config_package_add luci-app-autoreboot
 #config_package_add python3
 #config_package_add python3-base
 #config_package_add python3-pip
+# sftp-server
+config_package_add openssh-sftp-server
 
 # 第三方软件包
 mkdir -p package/custom
@@ -182,6 +184,8 @@ config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client
 config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Rust_Server
 config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client
 config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server
+# hysteria
+config_package_add hysteria
 
 # 镜像生成
 # 修改分区大小
